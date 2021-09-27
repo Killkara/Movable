@@ -2,12 +2,10 @@ public class MovableCircle implements Movable {
     private int radius;
     private MovablePoint center;
 
-    public MovableCircle(MovablePoint center, int radius) {
-        this.center.x=center.x;
-        this.center.y=center.y;
-        this.center.xSpeed=center.xSpeed;
-        this.center.ySpeed=center.ySpeed;
-        this.radius = radius;
+    public MovableCircle(MovablePoint point, int radius)
+    {
+        this.center=point;
+        this.radius=radius;
     }
 
     @Override
